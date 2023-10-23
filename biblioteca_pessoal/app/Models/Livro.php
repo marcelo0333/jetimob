@@ -9,6 +9,7 @@ class Livro extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'id',
         'titulo',
         'autor',
         'classificacao',
@@ -18,6 +19,9 @@ class Livro extends Model
         'updated_at',
     ];
     protected $hidden = [
-
+        'id',
+        'data_adicao',
+        'created_at',
+        'updated_at',
     ];
 }

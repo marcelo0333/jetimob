@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('autor');
             $table->unsignedInteger('classificacao');
             $table->text('resenha');
-            $table->timestamp('data_adicao')->useCurrent();
             $table->timestamps();
         });
     }
