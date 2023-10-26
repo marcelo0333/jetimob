@@ -18,7 +18,7 @@ Route::get('/', function(){
         'success' => true
     ]);
 });
-Route::patch('/livros/{id}', [LivroController::class, 'update']);
+Route::put('/livros/{id}', [LivroController::class, 'update']);
 Route::delete('/livros/{id}', [LivroController::class, 'destroy']);
 Route::get('/livros/{id}', [LivroController::class, 'show']);
 Route::post('/livros', [LivroController::class, 'cadastrar']);

@@ -14,14 +14,8 @@ class Livro extends Model
         'autor',
         'classificacao',
         'resenha',
-        'data_adicao',
         'created_at',
         'updated_at',
     ];
-    protected $hidden = [
-        'id',
-        'data_adicao',
-        'created_at',
-        'updated_at',
-    ];
+
 }
