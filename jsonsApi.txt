@@ -1,0 +1,68 @@
+
+FIND BY ID
+http://127.0.0.1:8000/livros/1
+
+{
+    "data": {
+        "identify": 30,
+        "titulo": "2",
+        "autor": "3",
+        "classificacao": 3,
+        "resenha": "sdsdsd",
+        "data_de_adicao": "26-10-2023"
+    }
+}
+
+
+GET ALL
+http://127.0.0.1:8000/livros
+{
+    "data": [
+        {
+            "identify": 23,
+            "titulo": "FINALIZADO",
+            "autor": "Finalizado",
+            "classificacao": 5,
+            "resenha": "Finalizado",
+            "data_de_adicao": "26-10-2023"
+        },
+        {
+            "identify": 24,
+            "titulo": "2",
+            "autor": "3",
+            "classificacao": 3,
+            "resenha": "sdsdsd",
+            "data_de_adicao": "26-10-2023"
+        },
+        {
+            "identify": 25,
+            "titulo": "2",
+            "autor": "3",
+            "classificacao": 3,
+            "resenha": "sdsdsd",
+            "data_de_adicao": "26-10-2023"
+        }
+    ]
+}
+DELETE
+
+http://127.0.0.1:8000/livros/1
+
+PUT
+http://127.0.0.1:8000/livros/21
+
+{
+        "titulo": "LIVRO TESTE Update",
+        "autor": "Machado Update",
+        "classificacao": 2,
+        "resenha": "Teste Update teste Update teste Update\r\nTeste teste teste\r\nTeste teste teste"
+    }
+POST
+http://127.0.0.1:8000/livros
+
+{
+            "titulo": "Novo",
+            "autor": "Machado tes2",
+            "classificacao":5,
+            "resenha": "Teste teste teste Teste teste teste\r\nTeste teste teste\r\nTeste teste teste"
+        }
