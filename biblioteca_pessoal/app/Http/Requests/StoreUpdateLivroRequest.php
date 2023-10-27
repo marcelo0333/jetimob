@@ -33,13 +33,13 @@ class StoreUpdateLivroRequest extends FormRequest
             'classificacao' => [
                 'required',
                 'integer',
-                'between:1,5',
+                'between:0,5',
             ],
             'resenha' => [
                 'required',
                 'max:255',
             ],
-            
+
 
         ];
     }
