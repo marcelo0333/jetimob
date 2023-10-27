@@ -13,6 +13,8 @@ export class BookEditComponent implements OnInit{
   identify:any;
   data:any;
   book = new Book;
+  status: Number = 0 ;
+
   constructor(private route:ActivatedRoute, private dataService:DataService){}
   ngOnInit(): void {
     // console.log(this.route.snapshot.params['id']);
@@ -28,7 +30,13 @@ export class BookEditComponent implements OnInit{
   }
   updateBook(){
     this.dataService.updateData(this.identify, this.book).subscribe((res:any)=>{
-      
-    })
+      return this.status = 1;
+
+    }, (error) => {
+
+      console.error('Erro ao realizar a inserção:', error);
+      return this.status = 2;
+
+  });
   }
 }

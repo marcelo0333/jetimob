@@ -1,6 +1,8 @@
 <div>
   <div class="card">
-    <h1>Cadastro de livros</h1>
+    <h1>Atualizar livro</h1>
+    <h4 class="sucesso" *ngIf="status === 1">Livro Atualizado com Sucesso</h4>
+    <h4 class="erro" *ngIf="status === 2">Livro Não Atualizado</h4>
     <form (ngSubmit)="updateBook()">
       <div class="form-group">
         <label for="titulo">Titulo</label>
